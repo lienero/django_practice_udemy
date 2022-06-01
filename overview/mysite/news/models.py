@@ -9,9 +9,9 @@ class Reporter(models.Model):
 
 
 class Article(models.Model):
-    pud_date = models.DateField()
+    pub_date = models.DateField()
     headline = models.CharField(max_length=200)
-    content = models.TextField
+    content = models.TextField()
     Reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
 
     def __str__(self):
