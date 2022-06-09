@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'lect_030103.apps.Lect030103Config',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
